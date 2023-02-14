@@ -402,13 +402,12 @@ body {
   display: flex;
   justify-content: space-between;
 }
-.production__button{
+.production__button {
   display: flex;
   justify-content: center;
-width: 100%;
-
+  width: 100%;
 }
-.production__button-link{
+.production__button-link {
   display: inline-block;
   background-color: #f87933;
   padding: 25px 35px;
@@ -416,17 +415,138 @@ width: 100%;
   font-weight: 700;
   font-size: 20px;
   line-height: 23px;
-  color: #FFFFFF;
-  
-  
+  color: #ffffff;
 }
 
 /* consultat */
-.cosultat__inner{
+.cosultat__inner {
   display: flex;
   justify-content: space-between;
-  gap: 30px;
+  gap: 102px;
 }
-.consultat__form{
+.swiper {
+  max-width: 690px;
+  max-height: 860px;
+  width: 100%;
+  height: 100%;
+}
 
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  max-width: 690px;
+  max-height: 860px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.swiper-slide:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(180deg, rgba(0, 75, 169, 0) 0%, #004ba9 66.67%);
+  opacity: 0.8;
+  z-index: 10;
+}
+.swiper__text{
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 108%;
+  color: #ffffff;
+  z-index: 100000;
+  max-width: 320px;
+  width: 100%;
+  text-align: left;
+}
+
+.cosultat__forma {
+  margin-bottom: 30px;
+}
+.consultat__title {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 108%;
+  color: #004ba9;
+  margin-bottom: 70px;
+}
+.consultat__text {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 108%;
+  color: #1a1a1a;
+  margin-bottom: 30px;
+}
+.consultat__input {
+  display: block;
+  margin-bottom: 15px;
+  background-color: #fafafa;
+  max-width: 760px;
+  width: 100%;
+  height: 75px;
+  padding: 0 35px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 108.19%;
+  color: #848484;
+  border: 1px solid #e6e6e6;
+}
+.cosultat__area {
+  max-width: 760px;
+  width: 100%;
+  height: 165px;
+  background-color: #fafafa;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 108.19%;
+  color: #848484;
+  padding: 25px 35px;
+  border: 1px solid #e6e6e6;
+  resize: none;
+}
+
+.consultat__button {
+  display: inline-block;
+  background-color: #f87933;
+  padding: 25px 109px;
+  border-radius: 35px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  color: #ffffff;
+  margin-bottom: 13px;
+  cursor: pointer;
+  border-style: none;
+}
+
+.consultat__submit {
+  display: flex;
+  justify-content: center;
+}
+.consultat__confident {
+  display: flex;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 108%;
+  color: #848484;
+}
+.consultat__confident-link {
+  text-decoration: underline;
 }

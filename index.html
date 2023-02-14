@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./style.css" />
     <title>IFAB</title>
   </head>
@@ -205,9 +206,29 @@
     <section class="cosultat">
       <div class="container">
         <div class="cosultat__inner">
-          <div class="cosultat__slider">
-            <img class="concultat__slider-img" src="./img/picture/slader1.jpg" alt="factory" >
-          </div>
+           <div class="cosultat__slider"> 
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img class="swiper__img " src="./img/picture/slader1.jpg" alt="slader">
+                  <p class="swiper__text">Пищевая
+                    промышленность</p>
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/picture/slader1.jpg" alt="slader">
+                  <p class="swiper__text">Электронная
+                    промышленность</p>
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/picture/slader1.jpg" alt="slader">
+                  <p class="swiper__text">Косметическая
+                    промышленность</p>
+                </div>
+               
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+           </div> 
           <div class="consultat__form">
             <h2 class="consultat__title">Мы имеем опыт решения задач, связанных с фильтрацией и очисткой продуктов и сред 
               на разных производствах</h2>
@@ -223,13 +244,18 @@
               <input class="consultat__input" type="email" placeholder="E-mail" required>
             </label>
              <label for="">
-              <textarea class="cosultat__area" name=""  class="cosultat__area" placeholder="Опишите ваш запрос"></textarea>
+              <textarea class="cosultat__area" class="cosultat__area" name=""   placeholder="Опишите ваш запрос"></textarea>
             </label>
             </form>
+            <div class="consultat__submit">
+              <input class="consultat__button" type="submit" value="Отправить запрос">
+            </div>
+            <div class="consultat__confident">Нажимая на кнопку, вы даете  &nbsp;  <a class="consultat__confident-link" href="#" > согласие на обработку персональных данных</a></div>
           </div>
         </div>
       </div>
     </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="./index.js"></script>
   </body>
 </html>
