@@ -419,6 +419,9 @@ body {
 }
 
 /* consultat */
+.cosultat{
+  margin-bottom: 160px;
+}
 .cosultat__inner {
   display: flex;
   justify-content: space-between;
@@ -549,4 +552,89 @@ body {
 }
 .consultat__confident-link {
   text-decoration: underline;
+}
+
+
+/* contact */
+
+.contact{
+  margin-bottom: 100px;
+}
+.contact__inner{
+  display: flex;
+  justify-content: space-between;
+  gap: 180px;
+}
+.contact__map-img{
+  width: 1058px;
+  height: 695px;
+}
+.contact_info{
+  display: flex;
+  align-items: center;
+}
+.contact__text{
+font-weight: 400;
+font-size: 26px;
+line-height: 108.2%;
+color: #1A1A1A;
+}
+.contact__logo{
+  margin-bottom: 30px;
+}
+.contact__item{
+  margin-bottom: 30px;
+}
+.contact__item:last-child{
+  margin-bottom: 0;
+}
+
+
+.contact__item{
+  position: relative;
+}
+.contact__item::before {
+  content: "";
+  position: absolute;
+  
+  top: 1px;
+  left: -41px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.contact__item--pin1::before{
+  background-image: url(./img/icons/contact__pin1.svg);
+  width:30px;
+  height: 40px;
+  top: 6px;
+}
+.contact__item--pin2::before{
+  background-image: url(./img/icons/contact__pin2.svg);
+  width: 30px;
+  height: 30px;
+  top: -4px;
+}
+.contact__item--pin3::before{
+  background-image: url(./img/icons/contact__pin3.svg);
+  width: 30px;
+  height: 21px;
+  top: 1px;
+}
+.contact__item--pin4::before{
+  background-image: url(./img/icons/contact__pin4.svg);
+  width: 30px;
+  height: 30px;
+  top: -3px;
+}
+/* futter */
+
+.futter{
+  background-color: #004BA9;
+}
+.futter__text{
+font-weight: 400;
+font-size: 24px;
+line-height: 31px;
+color: #FFFFFF;
+padding: 35px 120px;
 }
