@@ -40,6 +40,13 @@ body {
   height: 93px;
   width: 263px;
 }
+.nav__button-menu {
+  display: none;
+  border: none;
+  background-color: transparent;
+  font-size: 24px;
+  cursor: pointer;
+}
 
 .nav__list {
   display: flex;
@@ -137,6 +144,95 @@ body {
   line-height: 108.19%;
   text-transform: uppercase;
   color: #1a1a1a;
+}
+@media screen and (max-width: 992px) {
+  .nav__button-menu {
+    display: block;
+    font-size: 0;
+    width: 40px;
+    height: 40px;
+    z-index: 10;
+    /* position: relative; */
+  }
+  .nav__span {
+    width: 40px;
+    height: 5px;
+    display: block;
+    background-color: #000;
+    position: relative;
+  }
+  .nav__span::after {
+    content: "";
+    width: 40px;
+    height: 5px;
+    display: block;
+    background-color: #000;
+    position: absolute;
+    top: 12px;
+  }
+  .nav__span::before {
+    content: "";
+    width: 40px;
+    height: 5px;
+    display: block;
+    background-color: #000;
+    position: absolute;
+    top: -12px;
+  }
+  .nav__list {
+    position: absolute;
+    top: 0px;
+    right: -10px;
+    background-color: #fff;
+    flex-direction: column;
+    display: none;
+    width: 320px;
+    height: 100vh;
+    padding-left: 10px;
+    border-left: #221fed solid 2px;
+    padding-top: 100px;
+  }
+
+  .nav__button-active .nav__span::after {
+    transform: rotate(45deg);
+    top: -3px;
+  }
+  .nav__button-active .nav__span::before {
+    transform: rotate(-45deg);
+    top: -3px;
+  }
+  .nav__button-active .nav__span {
+    height: 0;
+  }
+  .nav__list-active {
+    display: flex;
+  }
+
+  .nav__item {
+    padding-right: 0;
+    padding-bottom: 15px;
+  }
+  .nav__item:first-child {
+    padding-top: 15px;
+  }
+  .nav__product {
+    flex-direction: column;
+    position: static;
+    padding: 20px 10px;
+    overflow-y: scroll;
+    height: 300px;
+    border-top: 0;
+  }
+  .categories__item {
+    text-transform: lowercase;
+    margin-bottom: 10px;
+  }
+  .categories__item::first-letter {
+    text-transform: uppercase;
+  }
+  .categories__item:last-child {
+    margin-bottom: 20px;
+  }
 }
 
 /* hero */
@@ -249,6 +345,17 @@ body {
   width: 100%;
 }
 
+/* media hero */
+
+@media screen and (max-width: 992px) {
+  .hero__list {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .hero__item {
+    margin: 10px;
+  }
+}
 /* geography */
 .geography {
   margin-bottom: 140px;
@@ -419,7 +526,7 @@ body {
 }
 
 /* consultat */
-.cosultat{
+.cosultat {
   margin-bottom: 160px;
 }
 .cosultat__inner {
@@ -465,7 +572,7 @@ body {
   opacity: 0.8;
   z-index: 10;
 }
-.swiper__text{
+.swiper__text {
   position: absolute;
   bottom: 40px;
   left: 40px;
@@ -554,73 +661,71 @@ body {
   text-decoration: underline;
 }
 
-
 /* contact */
 
-.contact{
+.contact {
   margin-bottom: 100px;
 }
-.contact__inner{
+.contact__inner {
   display: flex;
   justify-content: space-between;
   gap: 180px;
 }
-.contact__map-img{
+.contact__map-img {
   width: 1058px;
   height: 695px;
 }
-.contact_info{
+.contact_info {
   display: flex;
   align-items: center;
 }
-.contact__text{
-font-weight: 400;
-font-size: 26px;
-line-height: 108.2%;
-color: #1A1A1A;
+.contact__text {
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 108.2%;
+  color: #1a1a1a;
 }
-.contact__logo{
+.contact__logo {
   margin-bottom: 30px;
 }
-.contact__item{
+.contact__item {
   margin-bottom: 30px;
 }
-.contact__item:last-child{
+.contact__item:last-child {
   margin-bottom: 0;
 }
 
-
-.contact__item{
+.contact__item {
   position: relative;
 }
 .contact__item::before {
   content: "";
   position: absolute;
-  
+
   top: 1px;
   left: -41px;
   background-repeat: no-repeat;
   background-size: contain;
 }
-.contact__item--pin1::before{
+.contact__item--pin1::before {
   background-image: url(./img/icons/contact__pin1.svg);
-  width:30px;
+  width: 30px;
   height: 40px;
   top: 6px;
 }
-.contact__item--pin2::before{
+.contact__item--pin2::before {
   background-image: url(./img/icons/contact__pin2.svg);
   width: 30px;
   height: 30px;
   top: -4px;
 }
-.contact__item--pin3::before{
+.contact__item--pin3::before {
   background-image: url(./img/icons/contact__pin3.svg);
   width: 30px;
   height: 21px;
   top: 1px;
 }
-.contact__item--pin4::before{
+.contact__item--pin4::before {
   background-image: url(./img/icons/contact__pin4.svg);
   width: 30px;
   height: 30px;
@@ -628,13 +733,13 @@ color: #1A1A1A;
 }
 /* futter */
 
-.futter{
-  background-color: #004BA9;
+.futter {
+  background-color: #004ba9;
 }
-.futter__text{
-font-weight: 400;
-font-size: 24px;
-line-height: 31px;
-color: #FFFFFF;
-padding: 35px 120px;
+.futter__text {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 31px;
+  color: #ffffff;
+  padding: 35px 120px;
 }

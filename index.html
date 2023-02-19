@@ -10,74 +10,127 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./style.css" />
     <title>IFAB</title>
   </head>
   <body>
     <header class="header">
       <div class="container">
-        <nav class="nav ">
+        <nav class="nav">
           <a href="#" class="nav__logo">
             <img src="./img/icons/logo.svg" alt="logo" />
           </a>
-          
-            <ul class="nav__list">
-              <li class="nav__item">
-                <a class="nav__link" href="#" >Главная</a>
-              </li>
-              <li class="nav__item nav__item--products">
-                <div class="nav__link--inner">
-                <a class="nav__link " href="#" >Продукция </a><button class="product__active"></button></div>
-                <ul class="nav__product">
-                  <li class="nav__product-item">
-                    <ul class="nav__categories">
-                      <li class="categories__item categories__item--title"> <a class="categories__item-link" href="#" >Рукавные фильтры</a></li>
-                      <li class="categories__item"> <a class="categories__item-link" href="#" >однослойные </li>
-                      <li class="categories__item"> <a class="categories__item-link" href="#" >многослойные</a></li>
-                      <li class="categories__item"> <a class="categories__item-link" href="#" >с адсорбентом</a></li>
-                      <li class="categories__item"> <a class="categories__item-link" href="#" >тонкая фильтрация</a></li>
+          <button class="nav__button-menu">
+            menu
+            <span class="nav__span"></span>
+            
+          </button>
 
-                    </ul>
-                  </li>
-                  <li class="nav__product-item">
-                    <ul class="nav__categories">
-                      <li class="categories__item  categories__item--title"> <a class="categories__item-link" href="#" >ФИльтр-картриджи</a></li>
-                      <li class="categories__item"> <a class="categories__item-link" href="#" >ПОВЕРХНОСТНАЯ ФИЛЬТРАЦИЯ</a></li>
-                      <li class="categories__item"> <a class="categories__item-link" href="#" >ГЛУБИННАЯ фильтрация</a></li>
-                      <li class="categories__item"> <a class="categories__item-link" href="#" >Адсорбирующие</a></li>
-
-                    </ul>
-                  </li>
-                  <li class="nav__product-item">
-                    <ul class="nav__categories">
-                      <li class="categories__item categories__item--title"> <a class="categories__item-link" href="#" >КОРПУСы</a></li>
-                      <li class="categories__item"> <a class="categories__item-link" href="#" >КОРПУСы ДЛЯ ЭПФ</a></li>
-                      <li class="categories__item"> <a class="categories__item-link" href="#" >КОРПУСы ДЛЯ РУКАВНЫХ ФИЛЬТРОВ</a></li>
-
-                    </ul>
-                  </li>
-                  <li class="nav__product-item">
-                    <ul class="nav__categories">
-                     <li class="categories__item categories__item--title"> <a class="categories__item-link" href="#" >ФИЛЬТРУЮЩИЕ КАРТОНЫ</a></li> 
-                     <li class="categories__item categories__item--title"> <a class="categories__item-link" href="#" >адСОРБЕНТЫ</a></li>
-
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav__item"> 
-                <a class="nav__link" href="#" >О нас</a> 
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="#" >Контакты</a>
-              </li>
-            </ul>
-          
+          <ul class="nav__list ">
+            <li class="nav__item">
+              <a class="nav__link" href="#">Главная</a>
+            </li>
+            <li class="nav__item nav__item--products">
+              <div class="nav__link--inner">
+                <a class="nav__link" href="#">Продукция </a
+                ><button class="product__active"></button>
+              </div>
+              <ul class="nav__product">
+                <li class="nav__product-item">
+                  <ul class="nav__categories">
+                    <li class="categories__item categories__item--title">
+                      <a class="categories__item-link" href="#"
+                        >Рукавные фильтры</a
+                      >
+                    </li>
+                    <li class="categories__item">
+                      <a class="categories__item-link" href="#">однослойные </a>
+                    </li>
+                    <li class="categories__item">
+                      <a class="categories__item-link" href="#">многослойные</a>
+                    </li>
+                    <li class="categories__item">
+                      <a class="categories__item-link" href="#"
+                        >с адсорбентом</a
+                      >
+                    </li>
+                    <li class="categories__item">
+                      <a class="categories__item-link" href="#"
+                        >тонкая фильтрация</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav__product-item">
+                  <ul class="nav__categories">
+                    <li class="categories__item categories__item--title">
+                      <a class="categories__item-link" href="#"
+                        >ФИльтр-картриджи</a
+                      >
+                    </li>
+                    <li class="categories__item">
+                      <a class="categories__item-link" href="#"
+                        >ПОВЕРХНОСТНАЯ ФИЛЬТРАЦИЯ</a
+                      >
+                    </li>
+                    <li class="categories__item">
+                      <a class="categories__item-link" href="#"
+                        >ГЛУБИННАЯ фильтрация</a
+                      >
+                    </li>
+                    <li class="categories__item">
+                      <a class="categories__item-link" href="#"
+                        >Адсорбирующие</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav__product-item">
+                  <ul class="nav__categories">
+                    <li class="categories__item categories__item--title">
+                      <a class="categories__item-link" href="#">КОРПУСы</a>
+                    </li>
+                    <li class="categories__item">
+                      <a class="categories__item-link" href="#"
+                        >КОРПУСы ДЛЯ ЭПФ</a
+                      >
+                    </li>
+                    <li class="categories__item">
+                      <a class="categories__item-link" href="#"
+                        >КОРПУСы ДЛЯ РУКАВНЫХ ФИЛЬТРОВ</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav__product-item">
+                  <ul class="nav__categories">
+                    <li class="categories__item categories__item--title">
+                      <a class="categories__item-link" href="#"
+                        >ФИЛЬТРУЮЩИЕ КАРТОНЫ</a
+                      >
+                    </li>
+                    <li class="categories__item categories__item--title">
+                      <a class="categories__item-link" href="#">адСОРБЕНТЫ</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">О нас</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Контакты</a>
+            </li>
+          </ul>
         </nav>
       </div>
     </header>
-    <section class="hero" style="background-image: url(./img/background.png);">
+     <section class="hero" style="background-image: url(./img/background.png);">
       <div class="container">
         <div class="hero__title">
           Передовые технологии промышленной фильтрации
@@ -107,6 +160,7 @@
       </div>
     </div>
     </section>
+    <!--
     <section class="geography">
       <div class="container">
         <h1 class="geography__title">Наша география</h1>
@@ -296,7 +350,7 @@
     </section>
     <section class="futter">
       <p class="futter__text">© 2022 Все права защищены</p>
-    </section>
+    </section> -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="./index.js"></script>
   </body>
