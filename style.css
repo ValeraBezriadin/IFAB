@@ -151,7 +151,7 @@ body {
     font-size: 0;
     width: 40px;
     height: 40px;
-    z-index: 10;
+    z-index: 11;
     /* position: relative; */
   }
   .nav__span {
@@ -191,6 +191,7 @@ body {
     padding-left: 10px;
     border-left: #221fed solid 2px;
     padding-top: 100px;
+    z-index: 10;
   }
 
   .nav__button-active .nav__span::after {
@@ -237,7 +238,12 @@ body {
     max-width: 260px;
     width: 100%;
   }
-  
+  @media screen and (max-width: 360px){
+    .logo{
+      max-width: 230px;
+      width: 100%;
+    }
+  }
 }
 
 /* hero */
@@ -375,7 +381,11 @@ body {
   .hero__item{
     max-width: 540px;
     min-height: 200px;
+    
    
+  }
+  .hero__item:last-child{
+    margin-bottom: 15px;
   }
   .hero__item-title{
     max-width: 100%;
@@ -472,6 +482,7 @@ body {
   color: #004ba9;
 }
 /* geography media */
+
 @media screen and (max-width: 992px){
   .geography__inner{
     display: block;
@@ -609,7 +620,11 @@ body {
   .production__text{
     font-size: 17px;
   }
+  .production__title{
+    font-size: 21px;
+  }
  }
+ 
 /* consultat */
 .cosultat {
   margin-bottom: 160px;
@@ -745,18 +760,21 @@ body {
 .consultat__confident-link {
   text-decoration: underline;
 }
+
 /* consultat media */
-@media screen and (max-width: 1440px){
- 
+@media screen and (max-width: 1500px){
+.consultat__confident{
+    flex-direction: column;
+    text-align: center;
+  }
 }
-@media screen and (max-width: 992px){
-  
-  .cosultat__inner{
+@media screen and (max-width: 1440px){
+ .cosultat__inner{
     display: block;
     gap: 0;
     
-  }
-  .cosultat__slider{
+}
+.cosultat__slider{
     margin-bottom: 30px;
   }
   .consultat__form{
@@ -765,6 +783,11 @@ body {
   .consultat__input{
     display: inline;
   }
+  
+}
+@media screen and (max-width: 992px){
+  
+ 
   .consultat__title{
     font-size: 45px;
   }
@@ -781,7 +804,28 @@ body {
   }
 }
 @media screen and (max-width: 560px){
-
+  .swiper__text{
+    font-size: 30px;
+  }
+  .consultat__button{
+    padding: 25px 90px;
+  }
+}
+@media screen and (max-width: 440px){
+  .consultat__button{
+    padding: 25px 75px;
+  }
+  .swiper__text{
+    font-size: 25px;
+  }
+  .consultat__title{
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 360px){
+  .consultat__button{
+    padding: 20px 65px;
+  }
 }
 /* contact */
 
@@ -881,4 +925,27 @@ body {
   line-height: 31px;
   color: #ffffff;
   padding: 35px 120px;
+}
+@media screen and (max-width: 690px){
+  .futter__text{
+    padding: 35px 90px;
+  }
+}
+@media screen and (max-width: 560px){
+  .futter__text{
+    padding: 35px 75px;
+    font-size: 19px;
+  }
+}
+@media screen and (max-width: 440px){
+  .futter__text{
+    padding: 30px 40px;
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 440px){
+  .futter__text{
+    padding: 30px 40px;
+    font-size: 17px;
+  }
 }
