@@ -508,6 +508,13 @@ body {
    
   }
 }
+@media screen and (max-width: 560px){
+  .geography__inner{
+    
+    padding-left: 0;
+    
+  }
+}
 
 /* trust */
 
