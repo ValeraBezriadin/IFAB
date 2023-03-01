@@ -482,14 +482,30 @@ body {
   color: #004ba9;
 }
 /* geography media */
-
-@media screen and (max-width: 992px){
+@media screen and (max-width: 1440px){
+  .geography__map{
+    max-width: 580px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1240px){
+  .geography__map{
+    max-width: 520px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 990px){
   .geography__inner{
     display: block;
     padding-left: 30px;
+    
   }
   .geography__map{
     margin-bottom: 20px;
+    
+    max-width: 690px;
+    width: 100%;
+   
   }
 }
 
@@ -729,6 +745,7 @@ body {
   padding: 25px 35px;
   border: 1px solid #e6e6e6;
   resize: none;
+  
 }
 
 .consultat__button {
@@ -767,6 +784,15 @@ body {
     flex-direction: column;
     text-align: center;
   }
+  .consultat__title{
+    font-size: 51px;
+    margin-bottom: 50px;
+  }
+  .cosultat__inner{
+    
+    gap: 70px;
+    
+}
 }
 @media screen and (max-width: 1440px){
  .cosultat__inner{
